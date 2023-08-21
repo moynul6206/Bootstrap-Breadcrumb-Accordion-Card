@@ -14,23 +14,96 @@
 
 </div>
 <body>
-    <div class="nav-menu">
-<ul>
-<li><a href="#">SNAKER STUDIO</a></li>
-<li><a href="#">BRANDS</a></li>
-<li><a href="#">MEN</a></li>
-<li><a href="#">WOMEN</a></li>
-<li><a href="#">CHIDREN</a></li>
+    
+<div class="nav-menu"><div class="btn-group">
+    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+      BRANDS
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Power</a></li>
+      <li><a class="dropdown-item" href="#">North Star</a></li>
+      <li><a class="dropdown-item" href="#">Adidas</a></li>
+      <li><a class="dropdown-item" href="#">Bata</a></li>
+    </ul>
+  </div>
+  
+  <div class="btn-group">
+    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+      MEN
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Black</a></li>
+      <li><a class="dropdown-item" href="#">Blue</a></li>
+      <li><a class="dropdown-item" href="#">Brown</a></li>
+    </ul>
+  </div>
+  
+  <div class="btn-group">
+    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+      WOMEN
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Black</a></li>
+      <li><a class="dropdown-item" href="#">Blue</a></li>
+      <li><a class="dropdown-item" href="#">Brown</a></li>
+    </ul>
+  </div>
+  
+  <div class="btn-group">
+    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+      CHIENDREN
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Menu item</a></li>
+      <li><a class="dropdown-item" href="#">Menu item</a></li>
+      <li><a class="dropdown-item" href="#">Menu item</a></li>
+    </ul>
+  </div></div>
 
-<hr>
-</ul>
-</div>
+  
+
+
+
+
 
 <nav aria-label="<nav aria-label="breadcrumb">
     <ol class="breadcrumb">
         <li class="breadcrumb-item breadcrumb_home"><a href="#">Home</a></li>
         <li class="breadcrumb-item active" aria-current="page">Ladies Sports Shoes</li>
     </ol>
+
+
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="image/Flat-30_15_-_-bkash-web-banner.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="image/New-arrivals-web-banner1.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="image/Accessories-web-banner.webp" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+
+
 
 <div class="card-container">
   <div class="row col-4">
@@ -70,6 +143,11 @@
   </div>
 
 </div>
+
+
+
+
+
     <div class="">
         <div class="accordion" id="accordionExample">
             <div class="accordion-item">
@@ -85,6 +163,90 @@
 
 
     </div>
+
+
+<!-- Button trigger modal -->
+<div class="last-btn"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Click Here For Create New Account
+</button></div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Singup Form</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+
+
+
+
+        
+        <label for="user">Name:</label>
+        <input type="text" id="user" name="user" placeholder="User Name">
+         <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="usermail" placeholder="User Mail" required>
+         <br>
+        <label for="pass">Password</label>
+        <input type="pass" name="Password" placeholder="Password"> 
+        <br>
+        <label for="phn">Phon:</label> <br>
+        <select name="code">
+            <option value="+880">+880</option>
+            <option value="+990">+990</option>
+            <option value="+110">+110</option>
+        </select>
+        <input type="number" id="phn" name="phone" placeholder="1234567891" required>
+         <br>
+         <label for="Country">Country</label>
+         <input list="con">
+         <datalist id="con">
+            <option value="Bangladesh"></option>
+            <option value="India"></option>
+            <option value="Canada"></option>
+            </datalist>
+         <br>
+        Gender:
+        <input type="radio" name="gender">
+        <label for="gnd">Male</label>
+        <input type="radio" name="gender">
+        <label for="gnd">Female</label>
+         <br>
+        <label for="date">Date Of Birth:</label>
+        <input type="date" id="date" name="dob"> <br>
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="tm">
+        <br>
+        <label for="colors">Favourite Color:</label>
+        <input type="color" id="colors" name="clo">
+        <br>
+        <label for="file">Choose Photo:</label>
+        <input type="file" id="file" name="pic
+        ">
+        <br>
+        <input type="checkbox" id="vehicle1" name="vec">
+        <label for="vehicle1">I Have A Bike:</label>
+        <input type="checkbox" id="vehicle2" name="vec2">
+        <label for="vehicle2">I Have A Cycle</label>
+        <br> 
+        <textarea name="comment" cols="30" rows="10">Comment Here</textarea>
+        <br>
+       
+        <input type="reset" value="Reset">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Singup</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
     
 </body>
 </html>
